@@ -1,3 +1,6 @@
+CREATE DATABASE nba3;
+USE   nba3;
+
 CREATE TABLE `equipos` (
   `nombre` varchar(40) NOT NULL,
   `ciudad` varchar(45) NOT NULL,
