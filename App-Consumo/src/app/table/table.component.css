@@ -1,0 +1,9 @@
+.form-control.green-input {
+    border-color: #28a745; /* Cambia el color del borde a verde */
+    color: #28a745; /* Cambia el color del texto a verde */
+  }
+  
+  .form-control.green-input:focus {
+    border-color: #28a745; /* Mantén el color del borde en verde incluso en estado enfocado */
+    color: #28a745; /* Mantén el color del texto en verde incluso en estado enfocado */
+  }

@@ -1,0 +1,29 @@
+
+  
+  <form class="d-flex , mb-5" role="search"  >    
+    <input class="form-control me-5 mr-4 green-input" type="search" placeholder="Search" name="filterPost" [(ngModel)]="filterPost" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+
+  <table class="table table-success table-striped"  >
+    <thead >
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Username</th>
+        <th scope="col">Email</th>
+        <th scope="col">City</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of info | filter:filterPost " >
+        <th scope="row">{{user.id}}</th>
+        <td>{{user.name}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.address.city}}</td>
+        
+      </tr>
+    
+    </tbody>
+  </table>

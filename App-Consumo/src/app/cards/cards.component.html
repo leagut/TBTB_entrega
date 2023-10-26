@@ -1,0 +1,24 @@
+<form class="d-flex , mb-5" role="search"  >    
+    <input class="form-control me-5 mr-4 green-input" type="search" placeholder="Search" name="filterPost" [(ngModel)]="filterPost" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+<div class="container location  "  >
+    
+
+    <div class="principal-card" *ngFor="let user of info | filter:filterPost " >
+            <div class="info delineo" >
+                <p> <b>Id</b>  : {{user.id}}</p>
+                <p> <b>Name</b> : {{user.name}}</p>
+                <p><b>Email</b>: {{user.email}}</p>
+                <p><b>Website</b>: <a href="{{user.website}}">Link</a>  
+                <p><b>User</b>: {{user.username}}</p>             
+                <p><b>Company</b>: {{user.company.name}}</p>                
+                <p><b>ciudad</b>: {{user.address.city}}</p>
+                <p><b>Phone</b>:  {{user.phone}}</p>
+            </div>
+            <div class="mapa" >
+                <img src="https://holatelcel.com/wp-content/uploads/2021/03/whatsapp-foto-perfil.jpg" alt="" width="200px" srcset="">
+            </div>
+    </div>
+
+</div>

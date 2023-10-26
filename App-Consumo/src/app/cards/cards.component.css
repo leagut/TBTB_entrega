@@ -1,0 +1,59 @@
+.container{
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.principal-card{
+    width: 90%;
+    min-width: 320px;
+    height: 350px;
+    border: 1px solid rgb(63, 176, 131);
+    border-radius: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    margin-top: 10px;
+    background-color: rgb(133, 214, 176);
+    
+}
+
+.location{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 2px;
+    justify-content: center;
+    border: 1px solid rgb(32, 224, 80);
+    border-radius: 6px;
+    background-color: rgb(200, 247, 225);
+}
+
+.mapa{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delineo{
+    
+    margin: 2px;
+    display: flex;
+}
+
+.info{
+    width: 250px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width: 768px) {
+    .mapa {
+      display: none; /* Oculta el div "mapa" en pantallas más pequeñas */
+    }
+  }
